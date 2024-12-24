@@ -18,198 +18,179 @@
 }
 
 .large-text {
-    color: #A52A2A;
-    font-size: 40px;
-    font-weight: bold;
+    color: #A52A2A; /*adding desired color from AppAcademy*/
+    font-size: 40px; /*eyeballing the ratio between large text and regular text*/
+    font-weight: bold; /*adding bold to get it as close to desired image*/
 }
 
 .text {
-    color: purple; 
+    color: purple; /*the other texts right of large text are one color*/
 }
 
-.text:hover {
-    color: #A52A2A;
-    font-size: 15px;
-    text-decoration: underline;
-    transition: 0;
+.text:hover { 
+    color: #A52A2A; /*gif shows this color as the hover color*/
+    font-size: 15px; 
+    text-decoration: underline; /*gif shows an underlined effect on hover*/
+    transition: 0; /*I set transition to be as fast as possible*/
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /*this sets our Non Fiction header right in the middle of our screen*/
 }
 
 .content {
-    display: flex; 
-    justify-content: space-between; 
-    width: 100%; 
-    gap: 20px; 
+    display: flex; /*this aligns our two boook boxes side by side with one another in a flexbox*/
+    justify-content: space-between; /*creating an even space between them (desktop view)*/
+    width: 100%;/*setting the width of our book boxes to take up the entire space of the screen*/
+    gap: 20px; /*creating space between the boxes*/
 }
 
 .box {
-    flex: 1; 
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid #A52A2A;
-    height: auto;
-    margin: 10px;
+    flex: 1; /*setting content to take up fillable space within flex*/
+    padding: 30px; /*giving space around the inner content and box border*/
+    border: 2px solid #A52A2A; /*I wasn't at that meeting*/
+    height: auto; /*auto for device*/
+    margin: 50px; /*changed margin space to give the book boxes more box shape instead of all the empty space it was occupying*/
 }
   
 .box-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px; 
-    flex-grow: 1;
+    display: flex; /*setting inner box content to be fixed according to specs*/
+    flex-direction: row; /*setting the desired position of inner box*/
+    gap: 20px; /*space between paragraph and book image*/
 }
   
 .booktext {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: flex; /*setting flex on the text content*/
+    flex-direction: column; /*column puts them one on top of each other*/
   }
   
   .booktext h4,
   .booktext h5 {
-    margin: 10px;
+    margin: 10px; /*setting even margin spacing between text and image*/
   }
   
   .booktext p {
-    font-size: .9rem;
-    margin: 10px;
+    font-size: .9rem; /*setting p tag fonts to be a bit smaller than title and author*/
+    margin: 10px; /*aligning the margin with the title and author*/
 
   }
   
   .box img {
-    width: 150px; 
-    height: auto;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    width: 150px; /*book image set to 150px just by eyeballing goal image*/
+    height: auto; /*height is set to auto*/
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9); /*setting shadow effect on the book image by its thickness and color*/
   }
   
   button {
-    width: 150px; 
-    padding: 10px 20px;
-    background-color: #A52A2A;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
-    align-self: flex-start;;
+    width: 150px; /*setting button width to match book image*/
+    padding: 10px; /*setting the space around the box and text*/
+    background-color: #A52A2A; /*color specificed set*/
+    color: white; /*text color*/
+    border: none; /*no border or shadow depth*/
+    margin-top: 20px; /*setting space between book image and button*/
   }
   
   button:hover {
-    background-color: white;
+    background-color: white; /*setting hover color border and effect to gif requirements*/
     color: #800080;
     border: 2px solid #800080;
   }
 
   footer {
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-    gap: 60px; 
+    display: flex; /*setting footer to a flex position as comapny and connect lie in a row*/
+    justify-content: space-around; /*setting space around content and screen*/
+    gap: 60px; /*gives adequate space between the company and connect*/
   }
 
   .footer-section.company {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /*sets the list elements in a line*/
+    flex-direction: column; /*sets the structure of the black bold letters above the services and icons*/
+    align-items: center; /*sets text center of div*/
   }
 
 ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 40px;
+    padding: 0; /*removing internal spacing inside element*/
+    list-style: none; /*removes bullet points*/
+    display: flex; /*sets the list in a horizontal line*/
+    gap: 40px; /*generates the gap between our list elements*/
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*removing the underlining of the services elements*/
 }
 
 a:hover {
-    color: #A52A2A;
+    color: #A52A2A; /*setting color and underline to services elements*/
     text-decoration: underline;
 }
 
 .footer-section.connect {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*setting connect div to flex*/
+    flex-direction: column; /*similar to the company div we direct the elements in a column and align in the center*/
     align-items: center;
 }
 
 .icons {
-   display: flex;
-   gap: 40px;
+   display: flex; /*setting icons in a row using flex*/
+   gap: 40px; /*eyeballing the gap shown in goal image*/
 }
 
 .connect i {
-    color: black;
+    color: black; /*changing the icon colors to black as shown in goal image*/
 }
 
 
 @media screen and (max-width: 700px) {
-    .header {
-        flex-direction: column;
+    .header { /*setting header to change to column from row in mobile*/
+        flex-direction: column; 
         align-items: flex-start;
-        padding: 1rem;
+        padding: 1rem; /*setting padding for readability*/
     }
 
-    .text-container {
+    .text-container { /*setting text from row to column*/
         flex-direction: column;
         gap: 1rem;
         align-items: flex-start;
     }
 
-    .search-container{
-        width: 100%;
-        margin-top: 1rem;
-        display: flex;
+    .search-container{ /*goal image shows search bar in its own space*/
+        width: 100%; /*we let it take up the entire space*/
+        margin-top: 1rem; /*setting spacing by testing*/
+        display: flex; /*setting it in felx position*/
         justify-content: flex-start;
     }
 
-    .search-bar {
-        width: 90%;
-    }
-
     .content {
-      flex-direction: column; 
-      gap: 1rem; 
+      flex-direction: column; /*sets our box contents on top of each other and intact*/
+      gap: 1rem; /*giving spaceing between boxes*/
     }
 
     .box {
-        display: flex;
+        display: flex; /*setting the inner box elements to flex and column to maintain structure*/
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
-        border: none;
+        border: none; /*goal image has border removed when collpasing screen*/
     }
   
     .box-content {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
+      display: flex; /*keeping content within boxes structured as best as i could*/
+      flex-direction: row; /*keeping the image and text in a row*/
+      align-items: center; /*setting the text centered*/
+      gap: 10px; /*keeping text content closer to image*/
     }
   
     .box img {
-      width: 100px; 
-      height: auto;
+      width: 100px; /*setting book image to a 100px width*/
+      height: auto; /*height set to auto didn't know how to get it perfect with text*/
     }
 
     .booktext {
-        flex-direction: column;
-        justify-content: right;
-        font-size: .9rem;
+        font-size: .9rem; /*reducing font size for better pairing with book image*/
     }
   
     button {
-      align-self: left; 
-      width: auto;
+      align-self: left; /*pushing button to left side of div to match book image*/
+      width: fit-content; /*setting it to fit under book image*/
     }
   }
   
