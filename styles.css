@@ -1,19 +1,20 @@
+/* Starting the css by applying the same font to the entire webpage */
 * { 
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Flex is best used for our header as it is best for horizontal positioning */ 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 2px;
+    justify-content: space-between; /* this gives the desired spacing between all elements */ 
+    align-items: center; /* all items are vertically centered relative to the div container */
+    padding: 1rem; /* needed to create space inside the header box */ 
 }
 
 .text-container {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
+    display: flex; /* this gives us that inline layout that the picture has */
+    gap: 4rem; /*important gap measurement for the spacing of texts*/
+    align-items: center; /*applying center to align my text with my large text and search bar otherwise it shifts up*/
 }
 
 .large-text {
